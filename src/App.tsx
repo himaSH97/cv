@@ -1,6 +1,5 @@
 
 import { lazy, Suspense } from 'react';
-import './App.css'
 const Home = lazy(() => import('./pages/home'));
 
 import { pdfjs } from "react-pdf";
@@ -13,7 +12,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 function App() {
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<></>}>
       <Home />
     </Suspense>
   )

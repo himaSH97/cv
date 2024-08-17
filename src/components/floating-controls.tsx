@@ -15,11 +15,11 @@ const FloatingControls: React.FC<FloatingControlsProps> = ({
   return (
     <div className="fixed bottom-4 right-4 bg-white p-2 shadow-md rounded-3xl flex space-x-2 z-10 transition-all">
       <div className="flex flex-col justify-between items-center gap-2">
-        <button className="  rounded-full hover:text-blue-200" onClick={zoomIn}>
+        <button className="  rounded-full hover:hover:opacity-80 " onClick={zoomIn}>
           <CirclePlus />
         </button>
         <p className="align-center">{scale.toFixed(1)}</p>
-        <button className=" rounded-full hover:text-blue-200" onClick={zoomOut}>
+        <button className=" rounded-full hover:hover:opacity-80 " onClick={zoomOut}>
           <CircleMinus />
         </button>
       </div>
