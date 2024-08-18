@@ -10,6 +10,9 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
 
+    env:
+      VITE_AWS_BUCKET_PDF: ${{ secrets.VITE_AWS_BUCKET_PDF }}
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
