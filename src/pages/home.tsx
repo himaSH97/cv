@@ -34,19 +34,19 @@ const Home: React.FC = () => {
     <div className=" flex flex-col justify-center items-center bg-white">
       <nav className="fixed w-fit top-4 right-4 bg-transparent shadow-md z-10 flex justify-end rounded-full   ">
         <button className="sm:flex justify-center items-center bg-black text-white rounded hover:opacity-80 hidden  transition-all">
-          <a href="/cv/nipunHimash.pdf" download className="  px-4 py-2  ">
+          <a href="/nipunHimash.pdf" download className="  px-4 py-2  ">
             Download PDF
           </a>
         </button>
         <button className="flex justify-center items-center bg-black text-white  hover:opacity-80 rounded-full sm:hidden  transition-all">
-          <a href="/cv/nipunHimash.pdf" download className=" p-1 ">
+          <a href="/nipunHimash.pdf" download className=" p-1 ">
           <ArrowBigDownDash />
           </a>
         </button>
         
       </nav>
 
-      <Document file="/cv/nipunHimash.pdf" loading={<div className='animate-spin'><LoaderCircle /></div>}>
+      <Document file="/nipunHimash.pdf" loading={<div className='animate-spin'><LoaderCircle /></div>}>
         <Page pageNumber={1} renderAnnotationLayer={true} scale={scale} />
         <Page pageNumber={2} renderAnnotationLayer={true} scale={scale} />
       </Document>
